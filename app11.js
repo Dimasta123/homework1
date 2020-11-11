@@ -12,7 +12,7 @@ const avgPrice=(fullPrice/3).toFixed(2);
 let discount = Math.random();
 let clientDiscount = Math.floor(discount*100);
 let clientPrice = (( 1-discount)*fullPrice ).toFixed(2);
-let fullMoneyGet = ((fullPrice-clientPrice)/2).toFixed(2);
+let fullMoneyGet = ((fullPrice/2)-clientPrice).toFixed(2);
 console.log( `максимальне число  ${maxPrice} `);
 console.log( `мінімальне число ${minPrice} `);
 

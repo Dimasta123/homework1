@@ -5,8 +5,8 @@ const maxPrice =Math.max( soda, brendy, headPhones);
 const minPrice =Math.min( soda, brendy, headPhones);
 const fullPriceRound =Math.round((Math.floor(soda) + Math.floor(brendy)+ Math.floor(headPhones))/100)*100;
 const fullPrice =  soda + brendy + headPhones;
-const moneyBack=(500 - summ ).toFixed(2);
-const avgPrice=(summ/3).toFixed(2);
+const moneyBack=(500 - fullPrice ).toFixed(2);
+const avgPrice=(fullPrice/3).toFixed(2);
 
 
 let discount = Math.random();

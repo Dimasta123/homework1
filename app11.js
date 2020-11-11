@@ -1,12 +1,12 @@
 const soda=15.678;
 const brendy=123.965;
 const headPhones=90.2345;
-let maxPrice =Math.max( soda, brendy, headPhones);
-let minPrice =Math.min( soda, brendy, headPhones);
-let oOsumm =Math.round((Math.floor(soda) + Math.floor(brendy)+ Math.floor(headPhones))/100)*100;
-let summ =  soda + brendy + headPhones;
-let moneyBack=(500 - summ ).toFixed(2);
-let avgPrice=(summ/3).toFixed(2);
+const maxPrice =Math.max( soda, brendy, headPhones);
+const minPrice =Math.min( soda, brendy, headPhones);
+const oOsumm =Math.round((Math.floor(soda) + Math.floor(brendy)+ Math.floor(headPhones))/100)*100;
+const summ =  soda + brendy + headPhones;
+const moneyBack=(500 - summ ).toFixed(2);
+const avgPrice=(summ/3).toFixed(2);
 
 
 let discount = Math.random();
@@ -17,11 +17,11 @@ console.log( `максимальне число  ${maxPrice} `);
 console.log( `мінімальне число ${minPrice} `);
 
 console.log( `сума усіх товарів ${summ} `);
-let roundSumm = Math.floor(soda) + Math.floor(brendy)+ Math.floor(headPhones) ;
+const roundSumm = Math.floor(soda) + Math.floor(brendy)+ Math.floor(headPhones) ;
 console.log(`сумма без копійок ${roundSumm}`);
 
 console.log(`округленная суммма ${oOsumm}`);
-let pairNumber = roundSumm%2 == 0;
+const pairNumber = roundSumm%2 == 0;
 console.log(`Булеве зачення ${pairNumber}`);
 
 console.log( `Решта при покупці ${moneyBack}`);

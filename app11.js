@@ -7,29 +7,21 @@ const fullPriceRound =Math.round((Math.floor(soda) + Math.floor(brendy)+ Math.fl
 const fullPrice =  soda + brendy + headPhones;
 const moneyBack=(500 - fullPrice ).toFixed(2);
 const avgPrice=(fullPrice/3).toFixed(2);
-
-
 let discount = Math.random();
 let clientDiscount = Math.floor(discount*100);
 let clientPrice = (( 1-discount)*fullPrice ).toFixed(2);
 let fullMoneyGet = ((fullPrice/2)-clientPrice).toFixed(2);
 console.log( `максимальне число  ${maxPrice} `);
 console.log( `мінімальне число ${minPrice} `);
-
 console.log( `сума усіх товарів ${fullPrice} `);
 const roundSumm = Math.floor(soda) + Math.floor(brendy)+ Math.floor(headPhones) ;
 console.log(`сумма без копійок ${roundSumm}`);
-
 console.log(`округленная суммма ${fullPriceRound}`);
 const pairNumber = roundSumm%2 == 0;
 console.log(`Булеве зачення ${pairNumber}`);
-
 console.log( `Решта при покупці ${moneyBack}`);
 console.log(`Середня ціна товару ${avgPrice}`);
-
-
 console.log(`знижка ${clientDiscount}%`);
-
 console.log(`Ціна товарів зі знижкою ${clientPrice}`);
 console.log(`Прибуток ${fullMoneyGet}`);
 console.log(`максимальне число  ${maxPrice};

@@ -6,9 +6,10 @@ const maxDiscount = 30;
 const minDiscount = 10;
 const maxPrice = Math.max(sodaPrice, brendyPrice, headPhonesPrice);
 const minPrice = Math.min(sodaPrice, brendyPrice, headPhonesPrice);
-const fullPriceRound = (Math.floor(sodaPrice) +
+const roundSumm = Math.floor(sodaPrice) +
   Math.floor(brendyPrice) +
-  Math.floor(headPhonesPrice) / 100) *
+  Math.floor(headPhonesPrice);
+const fullPriceRound = (Math.floor(roundSumm / 100) *
   100;
 const fullPrice = sodaPrice + brendyPrice + headPhonesPrice;
 const moneyBack = (custumerCash - fullPrice).toFixed(2);
@@ -18,9 +19,6 @@ let clientDiscount = Math.floor(
 ) + minDiscount;
 let clientPrice = (fullPrice - fullPrice / clientDiscount).toFixed(2);
 let fullMoneyGet = ((fullPrice - clientPrice) / 2).toFixed(2);
-const roundSumm = Math.floor(sodaPrice) +
-  Math.floor(brendyPrice) +
-  Math.floor(headPhonesPrice);
 const pairNumber = roundSumm % 2 == 0;
 
 console.log(`максимальне число  ${maxPrice} `);

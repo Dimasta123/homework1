@@ -9,7 +9,7 @@ const minPrice = Math.min(sodaPrice, brendyPrice, headPhonesPrice);
 const roundSumm = Math.floor(sodaPrice) +
   Math.floor(brendyPrice) +
   Math.floor(headPhonesPrice);
-const fullPriceRound = (Math.floor(roundSumm / 100) *
+const fullPriceRound = (Math.floor(roundSumm / 100)) *
   100;
 const fullPrice = sodaPrice + brendyPrice + headPhonesPrice;
 const moneyBack = (custumerCash - fullPrice).toFixed(2);

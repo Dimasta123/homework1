@@ -12,13 +12,14 @@ let discount = Math.random();
 let clientDiscount = Math.floor(discount*100);
 let clientPrice = (( 1-discount)*fullPrice ).toFixed(2);
 let fullMoneyGet = ((fullPrice/2)-clientPrice).toFixed(2);
+const roundSumm = Math.floor(sodaPrice) + Math.floor(brendyPrice)+ Math.floor(headPhonesPrice) ;
+
+const pairNumber = roundSumm%2 == 0;
 console.log( `максимальне число  ${maxPrice} `);
 console.log( `мінімальне число ${minPrice} `);
 console.log( `сума усіх товарів ${fullPrice} `);
-const roundSumm = Math.floor(sodaPrice) + Math.floor(brendyPrice)+ Math.floor(headPhonesPrice) ;
 console.log(`сумма без копійок ${roundSumm}`);
 console.log(`округленная суммма ${fullPriceRound}`);
-const pairNumber = roundSumm%2 == 0;
 console.log(`Булеве зачення ${pairNumber}`);
 console.log( `Решта при покупці ${moneyBack}`);
 console.log(`Середня ціна товару ${avgPrice}`);

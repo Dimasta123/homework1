@@ -13,8 +13,8 @@ let clientDiscount = Math.floor(discount*100);
 let clientPrice = (( 1-discount)*fullPrice ).toFixed(2);
 let fullMoneyGet = ((fullPrice/2)-clientPrice).toFixed(2);
 const roundSumm = Math.floor(sodaPrice) + Math.floor(brendyPrice)+ Math.floor(headPhonesPrice) ;
-
 const pairNumber = roundSumm%2 == 0;
+
 console.log( `максимальне число  ${maxPrice} `);
 console.log( `мінімальне число ${minPrice} `);
 console.log( `сума усіх товарів ${fullPrice} `);
